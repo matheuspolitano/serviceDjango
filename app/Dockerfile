@@ -33,6 +33,7 @@ RUN addgroup -S app && adduser -S app -G app
 
 ENV HOME=/home/app
 ENV APP_HOME=/home/app/web
+RUN mkdir $APP_HOME/static
 RUN mkdir $APP_HOME
 WORKDIR $APP_HOME
 
